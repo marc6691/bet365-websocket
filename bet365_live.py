@@ -124,7 +124,7 @@ if __name__ == '__main__':
     
     result = subprocess.run(["node", "bet365_nst.js"], capture_output=True)
     response = result.stdout.decode("utf-8").strip()
-    print(response)
+    # print(response)
     factory.session_id = get_session_id(response)
     print(factory.session_id)
 
