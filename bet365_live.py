@@ -48,7 +48,6 @@ class MyClientProtocol(WebSocketClientProtocol):
 
       if message.startswith('100'):
       	# time.sleep(0.2)
-      	print('orkillo')
       	req = u'\x16\x00CONFIG_3_0,OVInPlay_3_0,Media_L3_Z0,XL_L3_Z0_C1_W1\x01'.encode('utf-8')
       	self.sendMessage(req)
 
